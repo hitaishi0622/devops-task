@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git') {
             steps {
-                git 'https://github.com/hitaishi0622/devops.git'
+                git 'https://github.com/hitaishi0622/devops-task.git'
             }
         }
     }
