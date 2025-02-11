@@ -8,12 +8,10 @@ pipeline {
             }
         }
     }
-     stages {
         stage('docker build and run') {
             steps {
                 bat '''docker build -f Dockerfile.java -t img1 .
                 docker run --name java-container img1'''
             }
-        }
     }
 }
